@@ -34,6 +34,6 @@
     </ul>
 
     <div class="nav__actions">
-        <button>Enqueue Post + </button>
+        <a href="/post/create"><button>Enqueue Post + </button></a>
     </div>
 </nav>
