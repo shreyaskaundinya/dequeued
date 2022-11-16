@@ -1,7 +1,7 @@
 package post
 
 import (
-	error "dequeued-backend/modules/Error"
+	res_error "dequeued-backend/modules/Error"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
@@ -16,7 +16,7 @@ func CreatePost(c *gin.Context) {
 
 	if err := c.BindJSON(&newBook); err != nil {
 		// println(err.Error())
-		c.IndentedJSON(http.StatusConflict, error.ResponseError{Message: "Cannot bind json"})
+		c.IndentedJSON(http.StatusConflict, res_error.ResponseError{Message: "Cannot bind json"})
 		return
 	}
 
