@@ -34,6 +34,7 @@
     </ul>
 
     <div class="nav__actions">
+        <a href="/user/login"><button>Login </button></a>
         <a href="/post/create"><button>Enqueue Post + </button></a>
     </div>
 </nav>
