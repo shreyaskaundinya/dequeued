@@ -54,7 +54,7 @@ export default function Create() {
                     Content
                     <textarea name='content' />
                 </label>
-                <button>Add</button>
+                <button className='btn btn-blue'>Add</button>
             </form>
         </div>
     );

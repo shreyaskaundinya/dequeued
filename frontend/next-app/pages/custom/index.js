@@ -38,7 +38,7 @@ export default function Custom() {
                 <textarea name='text' onChange={handleChange} />
             </label>
 
-            <button className='mt-6' onClick={handleGetResults}>
+            <button className='btn btn-blue mt-6' onClick={handleGetResults}>
                 Get Results
             </button>
 

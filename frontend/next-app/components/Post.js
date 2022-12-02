@@ -71,10 +71,12 @@ export default function Post({ post, upvotes = [], comments = [] }) {
             <div class='post__top'>
                 {post.user_id == userId ? (
                     <div className='post__actions'>
-                        <button onClick={handleEdit}>
+                        <button className='btn btn-blue' onClick={handleEdit}>
                             {edit ? 'Save' : 'Edit'}
                         </button>
-                        <button onClick={handleDelete}>Delete</button>
+                        <button className='btn btn-blue' onClick={handleDelete}>
+                            Delete
+                        </button>
                     </div>
                 ) : (
                     <></>
@@ -108,10 +110,10 @@ export default function Post({ post, upvotes = [], comments = [] }) {
                 </p>
             </div>
             <div class='post__bottom'>
-                <button class='post__upvote' onClick={handleUpVote}>
+                <button className='post__upvote' onClick={handleUpVote}>
                     Upvote ({post.upvotes})
                 </button>
-                <div class='post__comment'>Comment ({comments.length})</div>
+                <div className='post__comment'>Comment ({comments.length})</div>
             </div>
         </div>
     );

@@ -35,7 +35,9 @@ export default function Home() {
     return (
         <div className='page'>
             <p>HELLO WORLD, {user.username}</p>
-            <button onClick={getNewPosts}>Refresh</button>
+            <button className='btn btn-blue' onClick={getNewPosts}>
+                Refresh
+            </button>
             {homePosts?.map((p) => {
                 return <Post post={p} key={p.id} upvotes={[]} comments={[]} />;
             })}

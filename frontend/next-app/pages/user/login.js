@@ -45,22 +45,22 @@ export default function Login() {
 
     return (
         <div className='page'>
-            <div className='my-8'>
+            <div className='my-8 rounded-md p-4 border shadow-md'>
                 <h1>Login User</h1>
                 <form method='POST' onSubmit={handleLogin}>
                     <Input name='username' />
                     <Input name='password' type='password' />
-                    <button>Login</button>
+                    <button className='btn btn-blue'>Login</button>
                 </form>
             </div>
 
-            <div className='my-8'>
+            <div className='my-8 rounded-md p-4 border shadow-md'>
                 <h1>SignUp User</h1>
                 <form method='POST' onSubmit={handleSignup}>
                     <Input name='username' />
                     <Input name='name' />
                     <Input name='password' type='password' />
-                    <button>Sign Up</button>
+                    <button className='btn btn-blue'>Sign Up</button>
                 </form>
             </div>
         </div>

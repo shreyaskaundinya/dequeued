@@ -1,7 +1,7 @@
 export default function Input(props) {
     return (
         <label>
-            <span>{props.name}</span>
+            <span className='uppercase'>{props.name}</span>
             <input {...props} />
         </label>
     );

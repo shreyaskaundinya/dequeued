@@ -22,12 +22,12 @@ export default function Navbar() {
                 </li>
             </ul>
 
-            <div className='nav__actions'>
+            <div className='nav__actions flex gap-2'>
                 <Link href='/user/login'>
-                    <button>Login</button>
+                    <button className='btn btn-blue'>Login</button>
                 </Link>
                 <Link href='/post/create'>
-                    <button>Enqueue Post +</button>
+                    <button className='btn btn-blue'>Enqueue Post +</button>
                 </Link>
             </div>
         </nav>
