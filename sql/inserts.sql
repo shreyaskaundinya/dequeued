@@ -1,5 +1,3 @@
-
--- tables
 -- user
 
 -- delete from user;
@@ -74,24 +72,6 @@ insert into hashtag (tag) values
 ("rust");
 
 -- saved_post
--- -- posts => (post_id, usr) => (1, 1)  (2, 1) (3, 1) (4, 2) (5, 2) (6, 2) (7, 3);
--- -- 1 => 2
--- -- 1 => 3 0
--- -- 1 => 4 0
-
--- -- 2 => 1
--- -- 2 => 3
-
--- -- 3 => 1
--- -- 3 => 2
--- -- 3 => 5
-
--- -- 4 => 1
-
--- -- 5 => 1
--- -- 5 => 2
--- -- 5 => 3
--- -- 5 => 4 0
 insert into saved_post (user_id, post_id) values
 (5, 1),
 (5, 3),
@@ -127,24 +107,6 @@ insert into post_tag (tag, post_id) values
 ("go", 7);
 
 -- upvote
--- -- posts => (post_id, usr) => (1, 1)  (2, 1) (3, 1) (4, 2) (5, 2) (6, 2) (7, 3);
--- -- 1 => 2
--- -- 1 => 3 0
--- -- 1 => 4 0
-
--- -- 2 => 1
--- -- 2 => 3
-
--- -- 3 => 1
--- -- 3 => 2
--- -- 3 => 5
-
--- -- 4 => 1
-
--- -- 5 => 1
--- -- 5 => 2
--- -- 5 => 3
--- -- 5 => 4 0
 insert into upvote (user_id, post_id) values
 (1, 1),
 (2, 1),
